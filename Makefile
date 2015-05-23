@@ -9,6 +9,7 @@ ifneq ($(LAYOUT), qwerty)
 LAYOUT_DEPENDS=jsonlayout
 endif
 
+USB ?= /dev/cu.usbmodemfa131
 USB ?= /dev/ttyACM0
 
 # Build your keyboard layout
@@ -20,7 +21,8 @@ build: $(TARGET).hex
 # keyboard for the upload to complete
 #
 #   make upload LAYOUT=softdvorak
-upload: $(TARGET).hex
+upload: $(TARGET).hex jsonlayout
+	watch -d -n 1 -g $(USB)
 	while [ ! -r $(USB) ]; do sleep 1; done; \
 	avrdude -p $(MCU) -c avr109 -U flash:w:$(TARGET).hex -P $(USB)
 

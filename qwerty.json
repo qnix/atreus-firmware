@@ -13,7 +13,7 @@
   [["shift", "3"], ["shift", "4"], ["shift", "9"], ["shift", "0"], "QUOTE",
    ["shift", "8"], "4", "5", "6", ["shift", "EQUAL"]],
 
-  [["shift", "7"], ["shift", "BACKSLASH"], "LEFT_BRACE", "RIGHT_BRACE", ["shift", "6"],
+  [["shift", "BACKSLASH"], ["shift", "7"], "LEFT_BRACE", "RIGHT_BRACE", ["shift", "6"],
    "ALT",
    "EQUAL", "1", "2", "3", "ENTER"],
 

@@ -2,21 +2,24 @@
   ["A", "S", "D", "F", "G", "H", "J", "K", "L", "SEMICOLON"],
   ["Z", "X", "C", "V", "B",
    "ALT",
-   "N", "M", "COMMA", "PERIOD", "SLASH"],
+   "N", "M", "COMMA", "PERIOD", "ENTER"],
   ["ESC", "TAB", "GUI", "SHIFT", "FN",
    "CTRL",
-   "SPACE", "SHIFT", "MINUS", "TILDE", "ENTER"]],
+   "SPACE", "SHIFT", "MINUS", "TILDE", "SLASH"]],
 
- [[["shift", "1"], ["shift", "4"], ["shift", "LEFT_BRACE"], ["shift", "RIGHT_BRACE"], ["shift", "QUOTE"],
+ [[["shift", "1"], ["shift", "2"], ["shift", "LEFT_BRACE"], ["shift", "RIGHT_BRACE"], ["shift", "QUOTE"],
    "SLASH", "7", "8", "9", "MINUS"],
-  [["shift", "2"], ["shift", "5"], "LEFT_BRACE", "RIGHT_BRACE", "QUOTE",
+
+  [["shift", "3"], ["shift", "4"], ["shift", "9"], ["shift", "0"], "QUOTE",
    ["shift", "8"], "4", "5", "6", ["shift", "EQUAL"]],
-  [["shift", "3"], ["shift", "6"], ["shift", "9"], ["shift", "0"], ["shift", "7"],
+
+  [["shift", "7"], ["shift", "BACKSLASH"], "LEFT_BRACE", "RIGHT_BRACE", ["shift", "6"],
    "ALT",
    "EQUAL", "1", "2", "3", "ENTER"],
-  [["function", 2], "", "GUI", "SHIFT", "FN",
+
+  [["function", 2], ["shift", "5"], "GUI", "TAB", "FN",
    "CTRL",
-   "BACKSPACE", "0", "PERIOD", "BACKSLASH", ["shift", "BACKSLASH"]]],
+   ["ctrl", "W"], "0", "PERIOD", "BACKSLASH", "BACKSPACE"]],
 
  [["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"],
   ["INSERT", "", "UP", "", "HOME",

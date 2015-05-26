@@ -46,29 +46,42 @@ function rendercharacters {
   -e 's/shiftBACKSLASH/|/' \
   -e 's/shiftLEFT_BRACE/{/' \
   -e 's/shiftRIGHT_BRACE/}/' \
+  -e 's/shiftQUOTE/\"/' \
   -e 's/PAGE_DOWN/PgDn/' \
   -e 's/PAGE_UP/PgUp/' \
-  -e 's/BACKSPACE/← BS/' \
-  -e 's/COMMA/,/' \
+  -e 's/BACKSPACE/←/' \
+  -e 's/COMMA/, </' \
   -e 's/DELETE/Del/' \
   -e 's/DOWN/↓/' \
   -e 's/ENTER/⏎/' \
   -e 's/EQUAL/=/' \
   -e 's/FN/fn/' \
+  -e 's/shiftINSERT/Ins/' \
   -e 's/INSERT/Ins/' \
   -e 's/LEFT_BRACE/[/' \
   -e 's/LEFT/←/' \
-  -e 's/MINUS/-/' \
-  -e 's/PERIOD/./' \
+  -e 's/MINUS/- _/' \
+  -e 's/PERIOD/. >/' \
   -e "s/QUOTE/'/" \
   -e 's/RIGHT_BRACE/]/' \
   -e 's/RIGHT/→/' \
-  -e 's/SEMICOLON/;/' \
-  -e 's/TILDE/`/' \
+  -e 's/SEMICOLON/; :/' \
+  -e 's/TILDE/` ~/' \
   -e 's/UP/↑/' \
-  -e 's/function/Layer/' \
-  -e 's/BACKSLASH/\\/' \
-  -e 's/SLASH/\\\//'
+  -e 's/SPACE/Spc/' \
+  -e 's/ESC/Esc/' \
+  -e 's/GUI/Spr/' \
+  -e 's/TAB/Tab/' \
+  -e 's/SHIFT/Shft/' \
+  -e 's/CTRL/Ctrl/' \
+  -e 's/ALT/Alt/' \
+  -e 's/HOME/Home/' \
+  -e 's/END/End/' \
+  -e 's/layer/Lyr/' \
+  -e 's/shift=/+/' \
+  -e 's/function/Lyr/' \
+  -e 's/BACKSLASH/\\\\/' \
+  -e 's/SLASH/\\\/ ?/'
 }
 
 function debuglog {
@@ -113,8 +126,5 @@ do
     fi
   done
   cat "$layerfile" >> "$htmlfile"
-  rm "$layerfile"
+  ## rm "$layerfile"
 done
-
-
-

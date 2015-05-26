@@ -9,7 +9,7 @@ ifneq ($(LAYOUT), qwerty)
 LAYOUT_DEPENDS=jsonlayout
 endif
 
-USB ?= /dev/cu.usbmodemfa131
+USB ?= /dev/cu.usbmodemfd1241
 USB ?= /dev/ttyACM0
 
 # Build your keyboard layout
@@ -33,10 +33,10 @@ jsonlayout: atreus.el $(LAYOUT).json
 
 # remove build files
 clean:
-	-rm -f $(TARGET) $(TARGET).hex *.o
+	rm -f $(TARGET) $(TARGET).hex *.o
 
 layout.h: $(LAYOUT_DEPENDS)
-	-cp -n layout_qwerty.h layout.h
+	echo cp -n layout_qwerty.h layout.h
 
 $(TARGET).o: layout.h
 usb_keyboard.o: usb_keyboard.h

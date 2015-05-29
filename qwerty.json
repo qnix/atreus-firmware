@@ -7,26 +7,26 @@
    "CTRL",
    "SPACE", "SHIFT", "MINUS", "TILDE", "SLASH"]],
 
- [[["shift", "1"], ["shift", "2"], ["shift", "LEFT_BRACE"], ["shift", "RIGHT_BRACE"], ["shift", "QUOTE"],
+ [[["shift", "1"], ["shift", "2"], ["shift", "LEFT_BRACE"], ["shift", "QUOTE"], ["shift", "RIGHT_BRACE"],
    "SLASH", "7", "8", "9", "MINUS"],
-  [["shift", "3"], ["shift", "4"], ["shift", "9"], ["shift", "0"], "QUOTE",
+  [["shift", "3"], ["shift", "4"], ["shift", "9"], "QUOTE", ["shift", "0"],
    ["shift", "8"], "4", "5", "6", ["shift", "EQUAL"]],
-  [["shift", "BACKSLASH"], ["shift", "7"], "LEFT_BRACE", "RIGHT_BRACE", ["shift", "6"],
+  [["shift", "BACKSLASH"], ["shift", "7"], "LEFT_BRACE", ["shift", "6"], "RIGHT_BRACE",
    "ALT",
    "EQUAL", "1", "2", "3", "ENTER"],
-  [["function", 2], ["shift", "5"], "GUI", "TAB", "FN",
+  [["function", 2], "TAB", "GUI", ["shift", "5"], "FN",
    "CTRL",
    "BACKSPACE", "0", "PERIOD", "BACKSLASH", ["ctrl", "W"]]],
 
  [["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"],
-  ["INSERT", "", "UP", "", "HOME",
-   "PAGE_UP", "", "UP", "", "F11"],
+  ["INSERT", "LEFT_BRACE", "UP", "RIGHT_BRACE", "HOME",
+   "PAGE_UP", "LEFT_BRACE", "UP", "RIGHT_BRACE", "F11"],
   ["DELETE", "LEFT", "DOWN", "RIGHT", "END",
    "ALT",
    "PAGE_DOWN", "LEFT", "DOWN", "RIGHT", "F12"],
-  [["layer", 0], "", "GUI", "", "",
+  [["layer", 0], "", "", "SHIFT", "GUI",
    "CTRL",
-   "", "", "GUI", "", ["reset"]]]
+   "GUI", "SHIFT", "", "", ["reset"]]]
 ]
 
 /* qwerty.json
